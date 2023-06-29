@@ -9,11 +9,15 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white tombol-navbar active" aria-current="page"
-                            href="#"><strong>Home</strong></a>
+                        <router-link :to="{ name: 'home' }" class="nav-link text-white tombol-navbar active">
+                            <strong>Home</strong>
+                        </router-link>
+                        <!-- <a class="nav-link text-white tombol-navbar active" aria-current="page" href="#">
+                            <strong>Home</strong>
+                        </a> -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link tombol-navbar text-white" href="#"><strong>Calculate</strong></a>
+                        <router-link :to="{name:'calculate'}" class="nav-link tombol-navbar text-white"><strong>Calculate</strong></router-link>
                     </li>
                 </ul>
             </div>
@@ -33,10 +37,12 @@
     color: #F29727 !important;
     border-bottom: 2px solid #F29727 !important;
 }
-.judul-navbar{
+
+.judul-navbar {
     color: #ffffff !important;
 }
-.judul-navbar:hover{
+
+.judul-navbar:hover {
     color: #F29727 !important;
 }
 </style>
